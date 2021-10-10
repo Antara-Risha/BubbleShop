@@ -11,6 +11,7 @@
         <input type="email" name="email" placeholder="Email">
         <span type="text-danger">@error('email') {{$message}} @enderror</span>
         <input type="password" name="password" placeholder="Password">
+        <span type="text-danger">@error('email') {{$message}} @enderror</span>
         
 
         <button type="submit">Login</button>
