@@ -24,3 +24,5 @@ Route::get('/signup', function () {
     return view('signup');
 })->name('signup');
 Route::post('signup',[authcontroller::class,'index'])->name('authcontroller.signup');
+Route::post('check',[authcontroller::class,'check'])->name('authcontroller.check');
+

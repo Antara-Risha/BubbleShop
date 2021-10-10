@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class authcontroller extends Controller
 {
@@ -20,11 +21,33 @@ class authcontroller extends Controller
         $sp->email = $request->email;
         $sp->phonenumber = $request->phonenumber;
         $sp->address = $request->address;
-        $sp->password = $request->password;
+        $sp->password = Hash::make($request->password);
         $query=$sp->save();
         if($query){
             return redirect('login');
         }
+    }
+        function check(Request $request)
+        {
+            $request->validate([
+                'email'=>'required|email',
+                'password'=>'required|min:5|max:12'
+            ]);
+            $user = users::where('email','=',$request->email)->first();
+            if($user)
+            {
+                if(Hash::check($request->password,$user->password))
+        {
+               $request->session()->put('loggeduser',$user->id);
+               return redirect('signup');
+        }
+        else{
+        return back() ->with('fail','invalid password');
+            }
+        }
+        else {
+        return back() ->with('fail','no account');
+            }
     }
 
 //     /**
@@ -92,5 +115,6 @@ class authcontroller extends Controller
 //     {
 //         //
 //     }
- }
+ 
 
+}
