@@ -33,7 +33,7 @@ class authcontroller extends Controller
                 'email'=>'required|email',
                 'password'=>'required|min:5|max:12'
             ]);
-            $user = users::where('email','=',$request->email)->first();
+            $user = User::where('email','=',$request->email)->first();
             if($user)
             {
                 if(Hash::check($request->password,$user->password))

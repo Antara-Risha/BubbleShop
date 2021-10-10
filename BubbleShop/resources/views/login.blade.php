@@ -8,8 +8,8 @@
     <form action="check"  method="POST">
         @csrf
         <h1>Login</h1>
-        <input type="email" name="name" placeholder="Email">
-        <span type="text-danger"
+        <input type="email" name="email" placeholder="Email">
+        <span type="text-danger">@error('email') {{$message}} @enderror</span>
         <input type="password" name="password" placeholder="Password">
         
 
