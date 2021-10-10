@@ -1324,10 +1324,6 @@ class ComposerStaticInitb1becdb4c4717e031eead934c94934d0
         'Faker\\Provider\\nl_BE\\Payment' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Payment.php',
         'Faker\\Provider\\nl_BE\\Person' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Person.php',
         'Faker\\Provider\\nl_BE\\PhoneNumber' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/PhoneNumber.php',
-<<<<<<< HEAD
-=======
-        'Faker\\Provider\\nl_BE\\Text' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_BE/Text.php',
->>>>>>> 1eb370190d3feecb83b369319e6cf828f992e735
         'Faker\\Provider\\nl_NL\\Address' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Address.php',
         'Faker\\Provider\\nl_NL\\Color' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Color.php',
         'Faker\\Provider\\nl_NL\\Company' => __DIR__ . '/..' . '/fakerphp/faker/src/Faker/Provider/nl_NL/Company.php',
@@ -5492,17 +5488,10 @@ class ComposerStaticInitb1becdb4c4717e031eead934c94934d0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-<<<<<<< HEAD
             $loader->prefixLengthsPsr4 = ComposerStaticInitb1becdb4c4717e031eead934c94934d0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitb1becdb4c4717e031eead934c94934d0::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInitb1becdb4c4717e031eead934c94934d0::$prefixesPsr0;
             $loader->classMap = ComposerStaticInitb1becdb4c4717e031eead934c94934d0::$classMap;
-=======
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0e74fadb4c88f7ea4f2b5fc8703e438c::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0e74fadb4c88f7ea4f2b5fc8703e438c::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit0e74fadb4c88f7ea4f2b5fc8703e438c::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit0e74fadb4c88f7ea4f2b5fc8703e438c::$classMap;
->>>>>>> 1eb370190d3feecb83b369319e6cf828f992e735
 
         }, null, ClassLoader::class);
     }
