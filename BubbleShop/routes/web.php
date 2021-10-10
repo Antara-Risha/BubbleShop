@@ -26,3 +26,7 @@ Route::get('/signup', function () {
 Route::post('signup',[authcontroller::class,'index'])->name('authcontroller.signup');
 Route::post('check',[authcontroller::class,'check'])->name('authcontroller.check');
 
+Route::get('/customerDashboard', function () {
+    return view('customerDashboard');
+});
+

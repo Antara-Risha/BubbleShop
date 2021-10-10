@@ -13,6 +13,13 @@
         <input type="email" name="email" placeholder="Email">
         <input type="number" name="phonenumber" placeholder="Phone Number">
         <input type="text" name="address" placeholder="Address">
+        <input type="text" className="form-control"  list="usertype" placeholder="User-Type">
+                <datalist id="usertype">
+                <option value="Admin"/>
+                    <option value="Customer"/>
+                    
+                    
+                </datalist>
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="confirmpassword" placeholder="Confirm Password">
 

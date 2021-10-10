@@ -39,7 +39,7 @@ class authcontroller extends Controller
                 if(Hash::check($request->password,$user->password))
         {
                $request->session()->put('loggeduser',$user->id);
-               return redirect('signup');
+               return redirect('customerDashboard');
         }
         else{
         return back() ->with('fail','invalid password');
