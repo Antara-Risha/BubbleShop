@@ -29,4 +29,6 @@ Route::post('check',[authcontroller::class,'check'])->name('authcontroller.check
 Route::get('/customerDashboard', function () {
     return view('customerDashboard');
 });
-
+Route::get('/adminDashboard', function () {
+    return view('adminDashboard');
+});

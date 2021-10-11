@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 
+
 class authcontroller extends Controller
 {
     /**
@@ -21,6 +22,7 @@ class authcontroller extends Controller
         $sp->email = $request->email;
         $sp->phonenumber = $request->phonenumber;
         $sp->address = $request->address;
+        $sp->usertype = $request->usertype;
         $sp->password = Hash::make($request->password);
         $query=$sp->save();
         if($query){
@@ -39,7 +41,21 @@ class authcontroller extends Controller
                 if(Hash::check($request->password,$user->password))
         {
                $request->session()->put('loggeduser',$user->id);
-               return redirect('customerDashboard');
+            //    if($request->usertype === "Admin"){
+            //        return redirect('/');
+            //    }else{
+            //    return redirect('customerDashboard');
+            //    }
+            // $user = User::where('usertype', '=', $request->usertype)->first();
+            // if($user === "Admin") return redirect('welcome');
+            // else return redirect('customerDashboard');
+            $users = User::where('usertype', '=', 'Admin')->get();
+            if($users){
+                return redirect('adminDashboard');
+            }
+            else{
+                return redirect('customerDashboard');
+            }
         }
         else{
         return back() ->with('fail','invalid password');

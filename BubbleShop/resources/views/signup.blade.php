@@ -13,7 +13,7 @@
         <input type="email" name="email" placeholder="Email">
         <input type="number" name="phonenumber" placeholder="Phone Number">
         <input type="text" name="address" placeholder="Address">
-        <input type="text" className="form-control"  list="usertype" placeholder="User-Type">
+        <input type="text" className="form-control"  name="usertype" list="usertype" placeholder="User-Type">
                 <datalist id="usertype">
                 <option value="Admin"/>
                     <option value="Customer"/>
