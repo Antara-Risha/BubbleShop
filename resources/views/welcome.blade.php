@@ -12,15 +12,9 @@
         <section>
             
             <header>
-<<<<<<< HEAD
-                <img class="logo" a href="welcome" src="../frontend/img/washing-machine.png" />
-                <div class="navigation">
-                    <a href="welcome">Home</a>
-=======
                 <img class="logo" a href="welcome.html" src="../frontend/img/washing-machine.png" />
                 <div class="navigation">
                     <a href="welcome.html">Home</a>
->>>>>>> f8870dcad7fd712d3cefa03046f50edaab2423d7
                     <a href="#">About</a>
                     <a href="#">Services</a>
                     <a href="#">Contact</a>
