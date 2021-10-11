@@ -41,16 +41,7 @@ class authcontroller extends Controller
                 if(Hash::check($request->password,$user->password))
         {
                $request->session()->put('loggeduser',$user->id);
-            //    if($request->usertype === "Admin"){
-            //        return redirect('/');
-            //    }else{
-            //    return redirect('customerDashboard');
-            //    }
-            // $user = User::where('usertype', '=', $request->usertype)->first();
-            // if($user === "Admin") return redirect('welcome');
-            // else return redirect('customerDashboard');
-            $users = User::where('usertype', '=', 'Admin')->get();
-            if($users){
+            if($user ->usertype == 'Admin'){
                 return redirect('adminDashboard');
             }
             else{
