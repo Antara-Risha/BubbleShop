@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\authcontroller;
-
+use App\Http\Controllers\ItemsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,3 +32,9 @@ Route::get('/customerDashboard', function () {
 Route::get('/adminDashboard', function () {
     return view('adminDashboard');
 });
+
+Route::get('/items', function () {
+    return view('items');
+});
+Route::post('/items',[ItemsController::class,'addItems']);
+
