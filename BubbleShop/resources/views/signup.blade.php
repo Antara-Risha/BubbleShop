@@ -13,10 +13,19 @@
         <input type="email" name="email" placeholder="Email">
         <input type="number" name="phonenumber" placeholder="Phone Number">
         <input type="text" name="address" placeholder="Address">
+<<<<<<< HEAD
         <input type="text" className="form-control"  list="usertype" placeholder="User-Type">
                 <datalist id="usertype">
                 <option value="Admin"/>
                     <option value="Customer"/>
+=======
+        <input type="text" className="form-control"  name="usertype" list="usertype" placeholder="User-Type">
+                <datalist id="usertype">
+                <option value="Admin"/>
+                    <option value="Customer"/>
+                    
+                    
+>>>>>>> 4e427a0ba63ae1e591feed6b0abece7521c0f80b
                 </datalist>
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="confirmpassword" placeholder="Confirm Password">
