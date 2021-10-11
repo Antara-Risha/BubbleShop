@@ -17,7 +17,6 @@
                 <datalist id="usertype">
                 <option value="Admin"/>
                     <option value="Customer"/>
-                    
                 </datalist>
         <input type="password" name="password" placeholder="Password">
         <input type="password" name="confirmpassword" placeholder="Confirm Password">
