@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- <h1>ADD ITEMS</h1> -->
 <head>
     <title>Add Items</title>
     <link rel="stylesheet" type="text/css" href="../frontend/css/forms.css">
