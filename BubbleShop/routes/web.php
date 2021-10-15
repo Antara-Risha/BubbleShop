@@ -1,8 +1,16 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Customer\AvailableItemController;
+use App\Http\Controllers\Customer\CustomerController;
+use App\Http\Controllers\Customer\OrderController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ItemController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\authcontroller;
-use App\Http\Controllers\ItemsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,36 +22,10 @@ use App\Http\Controllers\ItemsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about', function () {
-    return view('about');
-});
-Route::get('/welcome', function () {
-    return view('welcome');
-});
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
-Route::get('/signup', function () {
-    return view('signup');
-})->name('signup');
-Route::post('signup',[authcontroller::class,'index'])->name('authcontroller.signup');
-Route::post('check',[authcontroller::class,'check'])->name('authcontroller.check');
 
-Route::get('/customerDashboard', function () {
-    return view('customerDashboard');
-});
+Route::get('/', [LoginController::class, 'index'])->name('login');
 
-Route::get('/adminDashboard', function () {
-    return view('test');
-});
+Route::get('register', [RegisterController::class, 'index'])->name('registerForm');
+Route::post('register', [RegisterController::class, 'register'])->name('register');
 
-Route::get('/items', function () {
-    return view('items');
-});
-Route::post('/items',[ItemsController::class,'addItems']);
-
-// Route::resource('users', PhotoController::class);
 

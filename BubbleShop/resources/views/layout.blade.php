@@ -44,10 +44,10 @@
                             @include('partials.nav')
                         </div>
                     </div>
-                    <div class="sb-sidenav-footer">
+                    <!-- <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
                         Admin
-                    </div>
+                    </div> -->
                 </nav>
             </div>
             <div id="layoutSidenav_content">

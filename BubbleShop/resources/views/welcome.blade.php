@@ -41,7 +41,7 @@
                 <div class="info">
                     <h2>The Bubble Shop</h2>
                     <p>We take care of your cloths</p>
-                    <a href="signup" class="info-btn">Sign Up</a>
+                    <a href="register" class="info-btn">Sign Up</a>
                     <a href="login" class="info-btn">Login</a>
                 </div>
             </div>
