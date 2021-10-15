@@ -17,6 +17,12 @@ use App\Http\Controllers\ItemsController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 Route::get('/login', function () {
     return view('login');
 })->name('login');
@@ -29,12 +35,15 @@ Route::post('check',[authcontroller::class,'check'])->name('authcontroller.check
 Route::get('/customerDashboard', function () {
     return view('customerDashboard');
 });
+
 Route::get('/adminDashboard', function () {
-    return view('adminDashboard');
+    return view('test');
 });
 
 Route::get('/items', function () {
     return view('items');
 });
 Route::post('/items',[ItemsController::class,'addItems']);
+
+// Route::resource('users', PhotoController::class);
 

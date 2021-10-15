@@ -12,16 +12,31 @@
         <section>
             
             <header>
-                <img class="logo" a href="welcome.html" src="../frontend/img/washing-machine.png" />
+                <img class="logo" a href="welcome.html" src="" />
                 <div class="navigation">
-                    <a href="welcome.html">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
+                    <a href="welcome">Home</a>
+                    <a href="about">Services</a>
                 </div>
                
 
             </header>
+            <div class="wrapper">
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+            </div>
             <div class="content">
                 <div class="info">
                     <h2>The Bubble Shop</h2>
