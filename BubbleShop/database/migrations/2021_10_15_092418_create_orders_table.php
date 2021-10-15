@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateOrdersTable extends Migration
 {
-    /**
+     /**
      * Run the migrations.
      *
      * @return void
@@ -15,9 +15,12 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('user_id');
+            $table->tinyInteger('status')->nullable()->comment('1 = washing, 2 = ironing, 3 = dispatched');
             $table->timestamps();
         });
     }
+
 
     /**
      * Reverse the migrations.
