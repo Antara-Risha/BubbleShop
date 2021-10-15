@@ -15,12 +15,14 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->id();
-            $table->string('item_name');
-            $table->string('wash_type');
-            $table->string('unit_price');
+            $table->string('name');
+            $table->string('type');
+            $table->float('unit_price');
+            $table->tinyInteger('status')->default(2)->comment('1 = Active, 2 = In-Active');
             $table->timestamps();
         });
     }
+    
 
     /**
      * Reverse the migrations.
