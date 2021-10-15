@@ -8,20 +8,34 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
     </head> 
     <body>
-
         <section>
             
             <header>
-                <img class="logo" a href="welcome.html" src="../frontend/img/washing-machine.png" />
+                <img class="logo" a href="welcome.html" src="" />
                 <div class="navigation">
                     <a href="welcome.html">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Services</a>
-                    <a href="#">Contact</a>
+                    <a href="about.html">Services</a>
                 </div>
                
 
             </header>
+            <div class="wrapper">
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+                <div><span class="dot"></span></div>
+            </div>
             <div class="content">
                 <div class="info">
                     <h2>The Bubble Shop</h2>
