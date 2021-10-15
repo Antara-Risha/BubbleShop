@@ -20,7 +20,31 @@ class Order extends Model
         'status',
     ];
 
-   
+    /**
+     * Each order has 1 or more details
+     *
+     * @return Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function orderDetails(): HasMany
+    {
+        return $this->hasMany(OrderDetail::class, 'order_id', 'id');
+    }
+
+    public function addOrderDetails($details)
+    {
+        $this->orderDetails()->create($details);
+    }
+
+    /**
+     * Each order belongs to a user
+     *
+     * @return Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+
     /**
      * Get the Created At.
      *
