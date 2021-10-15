@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateOrderDetailsTable extends Migration
 {
-    /**
+   /**
      * Run the migrations.
      *
      * @return void
@@ -15,6 +15,11 @@ class CreateOrderDetailsTable extends Migration
     {
         Schema::create('order_details', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('order_id');
+            $table->unsignedBigInteger('item_id');
+            $table->string('order_type');
+            $table->float('quantity');
+            $table->text('notes')->nullable();
             $table->timestamps();
         });
     }
