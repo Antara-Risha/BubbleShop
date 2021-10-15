@@ -14,8 +14,8 @@
             <header>
                 <img class="logo" a href="welcome.html" src="" />
                 <div class="navigation">
-                    <a href="welcome.html">Home</a>
-                    <a href="about.html">Services</a>
+                    <a href="welcome">Home</a>
+                    <a href="about">Services</a>
                 </div>
                
 
